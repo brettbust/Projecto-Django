@@ -27,4 +27,7 @@ def gerencia(request):
 
     return HttpResponse("gerencia")
 
+def final(request):
+    return HttpResponse("final")
+
 
