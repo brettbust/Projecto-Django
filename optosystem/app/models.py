@@ -11,9 +11,8 @@ class productos(models.Model):
         max_length=20, verbose_name='precio del producto')
     subtotal = models.FloatField(max_length=20, verbose_name='subtotal')
 
-
-def __str__(self):
-    return self.nombre_del_producto, self.precio_del_prodcuto, self.subtotal
+    def __str__(self):
+        return self.nombre_del_producto, self.precio_del_prodcuto, self.subtotal
 
 
 class pedidos(models.Model):
@@ -22,9 +21,8 @@ class pedidos(models.Model):
         max_length=20, verbose_name='estado del pedido')
     tipo_de_pago = models.CharField(max_length=20, verbose_name='tipo de pago')
 
-
-def __str__(self):
-    return self.estado_del_pedido, self.tipo_de_pago
+    def __str__(self):
+        return self.estado_del_pedido, self.tipo_de_pago
 
 
 class pacientes(models.Model):
@@ -37,9 +35,8 @@ class pacientes(models.Model):
     peso = models.FloatField(max_length=3, verbose_name='peso')
     altura = models.FloatField(max_length=3, verbose_name='altura')
 
-
-def __str__(self):
-    return self.nombre, self.apellido, self.edad, self.peso, self.altura
+    def __str__(self):
+        return self.nombre, self.apellido, self.edad, self.peso, self.altura
 
 
 class turnos(models.Model):
@@ -49,9 +46,8 @@ class turnos(models.Model):
     medico_asignado = models.CharField(
         max_length=20, verbose_name='medico asignado')
 
-
-def __str__(self):
-    return self.fecha_de_turno, self.medico_asignado
+    def __str__(self):
+        return self.fecha_de_turno, self.medico_asignado
 
 
 class historial(models.Model):
