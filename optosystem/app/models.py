@@ -44,7 +44,8 @@ def __str__(self):
 
 class turnos(models.Model):
     relacion_con_pacientes = models.ForeignKey(pacientes, on_delete=PROTECT)
-    fecha_de_turno = models.DateField(verbose_name='fecha de turno')
+    fecha_de_turno = models.DateField(
+        auto_now_add=True, verbose_name='fecha de turno')
     medico_asignado = models.CharField(
         max_length=20, verbose_name='medico asignado')
 
