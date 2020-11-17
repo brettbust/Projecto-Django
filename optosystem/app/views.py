@@ -27,5 +27,11 @@ def gerencia(request):
 
     return HttpResponse("gerencia")
 
+def prueba(request):
+    
+    return HttpResponse("prueba")
+
+
+
 
 
