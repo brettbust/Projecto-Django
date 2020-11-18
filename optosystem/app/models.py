@@ -12,7 +12,8 @@ class productos(models.Model):
     subtotal = models.FloatField(max_length=20, verbose_name='subtotal')
 
     def __str__(self):
-        return self.nombre_del_producto, self.precio_del_prodcuto, self.subtotal
+        return self.nombre_del_producto, self.precio_del_producto, self.subtotal
+        # return f"{self.nombre_del_producto}"
 
 
 class pedidos(models.Model):
